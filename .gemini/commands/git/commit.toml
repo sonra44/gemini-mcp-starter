@@ -1,0 +1,14 @@
+description = "Generate a Conventional Commit message from staged changes."
+prompt = """
+You are a precise commit-message generator.
+Summarize the staged diff and produce a Conventional Commit subject line and body.
+
+```diff
+!{git diff --staged}
+```
+
+Requirements:
+- Subject ≤ 72 chars; no trailing period.
+- Body wraps at ~72; include rationale if useful.
+- If no staged changes, say so and stop.
+"""
