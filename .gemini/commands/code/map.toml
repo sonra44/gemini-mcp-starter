@@ -1,0 +1,7 @@
+description = "Build a terse map of the repository's modules and entry points."
+prompt = """
+You are a world-class code-mapping assistant.
+Inspect the repository's file tree and provide a concise map of the project's modules.
+Highlight main entry points and identify any potentially risky or complex areas.
+Present your findings as a list of modules with short descriptions of their roles.
+"""
