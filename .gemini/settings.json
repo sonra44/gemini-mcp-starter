@@ -1,0 +1,25 @@
+{
+  "contextFileName": "GEMINI.md",
+  "autoAccept": false,
+  "vimMode": false,
+  "sandbox": false,
+  "includeDirectories": [],
+  "mcpServers": {
+    "ripgrep": {
+      "command": "npx",
+      "args": ["-y", "mcp-ripgrep"],
+      "timeout": 10000
+    },
+    "knowledge": {
+      "command": "npx",
+      "args": ["-y", "mcp-knowledge-graph", "--memory-path", "./memory/kg-memory.jsonl"],
+      "timeout": 10000
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@cyanheads/git-mcp-server"],
+      "timeout": 10000
+    }
+  },
+  "allowMCPServers": ["ripgrep", "knowledge", "git"]
+}
