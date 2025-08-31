@@ -1,0 +1,8 @@
+description = "Run the project's test suite safely."
+prompt = """
+You are a meticulous test-running assistant.
+Identify how to discover and execute all available tests for this project (unit, integration or otherwise).
+Suggest the appropriate command(s) to run tests, considering the project's language and tooling.
+Before executing, ensure that any setup or environment preparation is addressed.
+When ready, run the test command in a sandboxed environment after explicit user confirmation.
+"""
